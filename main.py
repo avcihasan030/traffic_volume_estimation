@@ -1,5 +1,6 @@
 import pandas as pd
 
+from data_modeling import build_model
 from data_preprocessing import preprocess_data
 
 
@@ -12,7 +13,7 @@ def load_dataset(file_path):
 
 
 # Ana fonksiyon
-def main():
+def process():
     # Dosya yollarını belirt
     train_file_path = 'data/train_data.csv'  # Eğitilecek verilerin dosya yolu
     test_file_path = 'data/test_data.csv'  # Test edilecek verilerin dosya yolu
@@ -43,4 +44,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # process()
+    build_model()
